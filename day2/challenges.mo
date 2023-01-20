@@ -4,6 +4,7 @@ import { foldRight = foldr } "mo:base/Array";
 import { add } "mo:base/Int";
 import { filter; size } "mo:base/Iter";
 import { equal } "mo:base/Char";
+import { tokens } "mo:base/Text";
 
 actor {
     let sum : [Int] -> Int = func xs = foldr<Int, Int>(xs, 0, add);
@@ -29,7 +30,25 @@ actor {
     // function factorial that takes a natural number n and returns the factorial of n.
     public query func factorial(n : Nat) : async Nat {
         fact(n);
+    };
+
+    // function number_of_words takes a sentence
+    // it returns the number of words in the sentence
+    public query func number_of_words(t : Text) : async Nat {
+        size(tokens(t, #char(' ')));    
+    };
+
+    //function find_duplicates that takes an array 
+    // of natural numbers and returns a new array containing
+    //all duplicate numbers.
+    public query func find_duplicates(a : [Nat]) : async [Nat] {
+        [8]
+    };
+
+    // Write a function convert_to_binary that takes a natural number n 
+    // and returns a string representing the binary representation of n.
+    public query func convert_to_binary(n : Nat) : async Text {
+        "TODO"
     }
-    
-    ; Debug.print("Hello, terminal");
+    ; Debug.print("Hello, terminal")
 }
