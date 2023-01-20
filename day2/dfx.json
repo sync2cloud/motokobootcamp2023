@@ -1,0 +1,7 @@
+{
+  "canisters": {
+    "challenges": {
+      "main": "challenges.mo"
+    }
+  }
+}
