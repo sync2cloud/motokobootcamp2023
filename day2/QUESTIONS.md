@@ -1,2 +1,3 @@
 1. Who controls the ledger canister?
-NNS
+by the NNS root canister
+

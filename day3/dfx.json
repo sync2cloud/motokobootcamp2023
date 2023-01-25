@@ -1,0 +1,7 @@
+{
+  "canisters": {
+    "day3": {
+      "main": "main.mo"
+    }
+  }
+}
